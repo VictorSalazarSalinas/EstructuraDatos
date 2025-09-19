@@ -29,5 +29,4 @@ for fila in cine:
     print(fila)
 
 
-
 print("Asientos libres: ", libres )
