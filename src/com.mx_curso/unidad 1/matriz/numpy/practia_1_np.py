@@ -17,7 +17,10 @@ for i in range(datos.shape[0]):
 		if datos[i,j] < 0:
 			indices_error.append([i-1])
 
+
 print(indices_error)
+
+
 datos_limpios=np.delete(datos,indices_error,axis=1)
 print()
 print(datos_limpios)
