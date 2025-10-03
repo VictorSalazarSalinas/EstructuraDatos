@@ -37,5 +37,4 @@ print(f"Estudiante {i+1}: {prom}")
 print("\nPromedios por examen:") 
 for j, prom in enumerate(promedios_exam): 
 print(f"Examen {j+1}: {prom}") 
-print(f"\nEstudiante con la mejor calificación: Estudiante {mejor_est+1} (nota: 
-{nota_max})")
+print(f"\nEstudiante con la mejor calificación: Estudiante {mejor_est+1} (nota:{nota_max})")
