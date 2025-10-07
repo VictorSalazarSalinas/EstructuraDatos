@@ -3,18 +3,28 @@ def mi_birds(arr):
 	print(len(arr))
 	print(arr)
 	max_c=0
-
-	for i in arr:
-		print(i)
+	z=0
+	indice=[]
+	for i in arr:		
+		
 		max_b=arr.count(i)
 		print(max_b)
 		if max_b>max_c:
-			posiscion=i
+			if max_b>max_c:
+				indice.clear()
+				indice.append(z)
+			else:
+				indice.append(z)
+			posiscion=z
 			max_c=max_b
 			print(max_c)
 			print("   ",posiscion)
-	print(arr[posiscion-1])
-
-
-arr=[1,4,4,4,5,3]
+		z=z+1
+	
+	
+	print(indice)
+	print(arr[min(indice)])
+	
+	
+arr=[1,4,4,2,2,3,3]
 mi_birds(arr)
