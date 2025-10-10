@@ -21,10 +21,10 @@ def mi_birds(arr):
 			print("   ",posiscion)
 		z=z+1
 	
-	
+	#indice.pop(0)
 	print(indice)
 	print(arr[min(indice)])
 	
 	
-arr=[1,4,4,2,2,3,3]
+arr=[1,4,4,2,2,3,3,7,7,7]
 mi_birds(arr)
