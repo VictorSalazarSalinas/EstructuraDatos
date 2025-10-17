@@ -2,11 +2,18 @@ import numpy as np
 
 
 #cargar el dataset
-datos=np.genfromtxt('src/com.mx_curso/unidad 1/matriz/numpy/practica_numpy_1/iris.data',delimiter=',',dtype='object')
+datos = np.genfromtxt(r'C:\Users\victo\Desktop\tareas\datos\ESTRUCUTURADATOS\src\com.mx_curso\unidad 1\matriz\numpy\practica_numpy_1\iris.data', delimiter=',', dtype='object')
+
 
 print(datos)
 
-datos_numericos=np.genfromtxt('src/com.mx_curso/unidad 1/matriz/numpy/practica_numpy_1/iris.data',delimiter=',',usecel=[0,1,2,3])
+import numpy as np
+
+datos_numericos = np.genfromtxt(r'C:\Users\victo\Desktop\tareas\datos\ESTRUCUTURADATOS\src\com.mx_curso\unidad 1\matriz\numpy\practica_numpy_1\iris.data',
+    delimiter=',',
+    usecols=[0, 1, 2, 3],
+    dtype=float
+)
 
 
 print(datos_numericos)
@@ -21,14 +28,14 @@ print("datos limpos",datos_limpos)
 
 datos_limpos[0,0]=np.nan
 datos_limpos[1,2]=np.nan
-datos_limpos[2,5]=np.nan
-datos_limpos[2,5]=np.nan
-datos_limpos[2,5]=np.nan
+datos_limpos[2,2]=np.nan
+datos_limpos[2,1]=np.nan
+datos_limpos[2,1]=np.nan
 datos_limpos[3,0]=np.nan
-datos_limpos[3,7]=np.nan
-datos_limpos[4,7]=np.nan
-datos_limpos[4,7]=np.nan
-datos_limpos[4,0]=np.nan
+datos_limpos[2,1]=np.nan
+datos_limpos[2,1]=np.nan
+datos_limpos[2,1]=np.nan
+datos_limpos[0,0]=np.nan
 
 
 

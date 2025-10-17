@@ -16,8 +16,10 @@ for fila in matriz_A:
 		suma=suma+elemento
 		print(elemento,end="")
 	print("")
+	
 pro=suma/z
 print(suma,"  suma  ",pro, "   promedio")
+
 print("deseas modificar una temperatuta")
 mod=int(input("1:si  2:no"))
 
@@ -33,3 +35,7 @@ for fila in matriz_A:
 		suma=suma+elemento
 		print(elemento,end="")
 	print("")
+
+
+pro=suma/z
+print(suma,"  suma  ",pro, "   promedio")
