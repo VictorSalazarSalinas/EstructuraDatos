@@ -14,9 +14,10 @@ def diagonal(a):
 				sumd1=sumd1+z
 			i=i+1
 		u=u+1
-
 	
-	u=len(a-1)
+	u=len(a)
+	u=u-1
+
 	#diagonal 2
 	for x in a:
 		i=0
