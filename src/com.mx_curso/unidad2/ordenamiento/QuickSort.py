@@ -1,6 +1,6 @@
 import random
 # Lista de 200 puntuaciones
-similaridades = [random.randint(0, 1000) for _ in range(200)]
+similaridades = [1,99,55,3]
 
 # Función QuickSort
 def quicksort(lista):
@@ -9,7 +9,9 @@ def quicksort(lista):
     else:
         pivote = lista[0]
         mayores=[x for x in lista[1:] if x>pivote]
+        print(mayores)
         menores=[x for x in lista[1:] if x<=pivote]
+        print(mayores)
         return quicksort(mayores)+[pivote]+quicksort(menores)
 
 # Ordenar de mayor a menor

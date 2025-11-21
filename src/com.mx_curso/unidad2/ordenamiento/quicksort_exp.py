@@ -4,7 +4,7 @@ def quicksort(arreglo):
     pivote = arreglo[-1]  # Elegimos el último elemento como pivote
     menores = [x for x in arreglo[:-1] if x <= pivote]  
     mayores = [x for x in arreglo[:-1] if x > pivote] 
-      
+    print(menores,mayores)
     # Aplicamos recursión y combinamos resultados
     return quicksort(menores) + [pivote] + quicksort(mayores)
 
