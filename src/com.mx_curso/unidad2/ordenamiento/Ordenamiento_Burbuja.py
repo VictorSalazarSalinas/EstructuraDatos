@@ -1,5 +1,5 @@
 # Lista con las puntuaciones de riesgo de los correos
-correos=[75,20,55,40,90,10,60,30,80,25]
+correos=[15,4,1,10]
 
 print("Correos no ordenados:")
 print(correos)
@@ -8,7 +8,7 @@ print(correos)
 # Ordenamiento burbuja
 n=len(correos)
 
-for i in range(n-1):
+for i in range(1):
     for j in range(n-i-1):
         if correos[j]>correos[j+1]:
             # Intercambiar los elementos
